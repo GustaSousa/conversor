@@ -1,0 +1,148 @@
+:root {
+  --color-black-frist: #596275;
+  --color-black-second: #000;
+  --color-black-third: #34495e;
+  --color-frist: #ff3f34;
+  --color-second: #ffd32a;
+  --color-third: #fff;
+}
+html,
+body {
+  height: 100vh;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Press Start 2P", cursiva;
+  background-color: var(--color-black-third);
+  font-size: 10px;
+}
+
+.convert {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-black-frist);
+  padding: 30px;
+  border: 10px solid var(--color-black-second);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: var(--color-third);
+  max-width: 650px;
+}
+
+.title {
+  color: var(--color-second);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 3rem;
+}
+
+.title:after,
+.title:before {
+  content: "";
+  background-image: url(https://i.pinimg.com/originals/96/4c/f1/964cf112c8928c7c75312f7f15e6b1e0.png);
+  display: block;
+  position: relative;
+  top: -5px;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+input {
+  width: 100%;
+  height: 20px;
+  box-shadow: 4px 4px 0;
+}
+
+output {
+  color: var(--color-third);
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--color-third);
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.label {
+  color: var(--color-third);
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+input {
+    font-size: 1.6rem;
+    border: 2px solid;
+    border-radius: 4px;
+    box-shadow: 2px 2px 0 var(--color-secondary-dark);
+  }
+  
+  input:focus {
+    border-color: var(--color-black-frist);
+  }
+
+.button {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  background-color: var(--color-second);
+  font-family: inherit;
+  color: var(--color-third);
+  font-size: 1.8rem;
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 var(--color-black-second);
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.real {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+  margin-left: 10px;
+  border: 0;
+  border-radius: 0;
+  padding: 10px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.dolar {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1.8rem;
+    }
+  
+    .label {
+      font-size: 1.4rem;
+    }
+  
+    input,
+    .button {
+      font-size: 1.4rem;
+      height: 40px;
+    }
+  
+    .convert {
+      padding: 20px;
+    }
+  }
